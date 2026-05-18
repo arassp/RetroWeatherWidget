@@ -174,7 +174,7 @@ Open <code>Retroweather.ini</code> and find the <code>[Variables]</code> section
 <details>
 <summary>Where is the weather API URL defined?</summary>
 <br>
-In the <code>[Variables]</code> section, look for <code>WeatherURL</code>. It's built dynamically using your <code>Latitude</code>, <code>Longitude</code>, and <code>TempUnit</code> variables so it updates automatically when you switch units or change location.
+In the <code>[Variables]</code> section, look for <code>WeatherURL</code>.
 </details>
 
 <details>
