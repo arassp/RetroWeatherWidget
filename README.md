@@ -11,6 +11,7 @@ Retroweather works on Windows 7 and above.
 ---
 
 ## Features
+![RetroWeather Features](features.png)
 
 - **Live weather** — current temperature, conditions, high/low
 - **3-day forecast** — with weather icons, temperatures, and UV index
