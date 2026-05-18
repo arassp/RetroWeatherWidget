@@ -37,7 +37,7 @@ Retroweather works on Windows 7 and above.
 ## Installation
 
 1. Download or clone this repository
-2. Copy the `RetroWeather2` folder to your Rainmeter Skins directory:
+2. Copy the `RetroWeather` folder to your Rainmeter Skins directory:
    
    ```
    Documents\Rainmeter\Skins\RetroWeather\
