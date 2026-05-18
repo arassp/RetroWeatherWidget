@@ -137,19 +137,19 @@ Yes. Open <code>Retroweather.ini</code> and edit the color variables at the top,
 <details>
 <summary>Why is wind speed showing zero?</summary>
 <br>
-The wind data is fetched from a separate API call. It may take a few extra seconds to load after the widget first appears. If it stays at zero, right-click and hit <strong>Refresh weather</strong>.
+The wind data is fetched from a separate API call. It may take a few extra seconds to load after the widget first appears. If it stays at zero, right click and hit <strong>Refresh weather</strong>.
 </details>
 
 <details>
 <summary>Why does the location switcher open a command window briefly?</summary>
 <br>
-The location switcher runs a PowerShell script via the RunCommand plugin. The brief window flash is normal — it closes automatically once the script finishes and the skin refreshes with the new location.
+The location switcher runs a PowerShell script via the RunCommand plugin. The brief window flash is normal as it closes automatically once the script finishes and the skin refreshes with the new location.
 </details>
 
 <details>
 <summary>How do I find my latitude and longitude?</summary>
 <br>
-Go to <a href="https://maps.google.com">Google Maps</a>, right-click your location, and the coordinates will appear at the top of the context menu. Copy them into the <code>Latitude</code> and <code>Longitude</code> fields in <code>Retroweather.ini</code>.
+Go to <a href="https://maps.google.com">Google Maps</a>, right click your location, and the coordinates will appear at the top of the context menu. Copy them into the <code>Latitude</code> and <code>Longitude</code> fields in <code>Retroweather.ini</code>.
 </details>
 
 <details>
