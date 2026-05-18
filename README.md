@@ -166,12 +166,40 @@ Yes. Copy the entire skin folder, give it a different name, load it separately i
 </details
 
 <details>
-<summary>Why is the night mode not switching?</summary>
+<summary>Where do I change the default location in the code?</summary>
 <br>
-The day/night switch depends on live sunrise/sunset data from the API. If the skin just loaded, it may take a few seconds to fetch the data. 
+Open <code>Retroweather.ini</code> and find the <code>[Variables]</code> section near the top. Edit <code>Latitude</code>, <code>Longitude</code>, and <code>Location</code> to your coordinates and city name.
 </details>
 
+<details>
+<summary>Where is the weather API URL defined?</summary>
+<br>
+In the <code>[Variables]</code> section, look for <code>WeatherURL</code>. It's built dynamically using your <code>Latitude</code>, <code>Longitude</code>, and <code>TempUnit</code> variables so it updates automatically when you switch units or change location.
+</details>
 
+<details>
+<summary>How does the day/night mode work in the code?</summary>
+<br>
+<code>[MeasureSun]</code> fetches live sunrise and sunset times as Unix timestamps. <code>[MeasureDarkMode]</code> then compares the current time against those values. If it's before sunrise or after sunset it fires <code>IfTrueAction</code> which swaps the color variables and adds moon shapes to <code>[MeterSun]</code>.
+</details>
+
+<details>
+<summary>How does the location switcher work under the hood?</summary>
+<br>
+When you select Change Location, Rainmeter triggers <code>[MeasureRunBat]</code> which uses the RunCommand plugin to launch <code>ChangeLocation.ps1</code>. The script shows an input dialog, calls the Open-Meteo Geocoding API to convert the city name to coordinates, then directly rewrites the <code>Latitude</code>, <code>Longitude</code>, and <code>Location</code> values in the ini file before Rainmeter refreshes.
+</details>
+
+<details>
+<summary>How are the weather icons rendered without image files?</summary>
+<br>
+The icons are characters from the Meteocons font. Each weather code is substituted for a specific letter in <code>[MeasureD0Icon]</code>, <code>[MeasureD1Icon]</code>, and <code>[MeasureD2Icon]</code>. When those letters are rendered using the Meteocons font face in the meter, they appear as weather symbols.
+</details>
+
+<details>
+<summary>How does the icon color change per condition?</summary>
+<br>
+Each icon meter has three companion measures — <code>ColorR</code>, <code>ColorG</code>, and <code>ColorB</code> — that use Substitute to map weather codes to RGB values. The meter's <code>FontColor</code> then references those three measures dynamically to build the final color.
+</details>
 ---
 ## License
 
