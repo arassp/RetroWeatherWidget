@@ -129,29 +129,41 @@ Windows 7 ships with PowerShell 2.0 which lacks TLS 1.2 support, required by the
 ---
 ## FAQ
 
-**Does this work on Windows 10 and 11?**
-Yes. It was originally built on Windows 7 but works on all modern versions of Windows. Windows 10 and 11 users will have an easier setup since PowerShell 5.1 and TLS 1.2 are already built in.
+<details>
+<summary>Can I change how often the weather updates?</summary>
+<br>
+Yes. Open <code>Retroweather.ini</code> and find <code>UpdateSeconds=300</code> in the Variables section. Change <code>300</code> to any number of seconds you want. 300 = 5 minutes, 600 = 10 minutes, 900 = 15 minutes.
+</details>
 
-**Do I need an API key?**
-No. RetroWeather uses Open-Meteo which is completely free with no account or API key required.
+<details>
+<summary>How do I find my latitude and longitude?</summary>
+<br>
+Go to <a href="https://maps.google.com">Google Maps</a>, right-click your location, and the coordinates will appear at the top of the context menu. Copy them into the <code>Latitude</code> and <code>Longitude</code> fields in <code>Retroweather.ini</code>.
+</details>
 
-**How do I change my location?**
-Right-click the widget and select **Change Location...**. Type any city name or US zip code and it will update automatically.
+<details>
+<summary>Can I add more forecast days?</summary>
+<br>
+The widget currently shows 3 days. Open-Meteo supports up to 16 days of forecast data, but adding more days would require adding new measures and meters to the skin file for each additional day.
+</details>
 
-**Why does the location switcher not work on Windows 7?**
-Windows 7 ships with an older version of PowerShell that can't make secure HTTPS connections. Install [WMF 5.1](https://www.microsoft.com/en-us/download/details.aspx?id=54616) to fix this — see the Windows 7 Notes section above.
+<details>
+<summary>What does the colored bar under AQI mean?</summary>
+<br>
+The bar color indicates air quality — green is good (0–50), yellow is moderate (51–100), orange is unhealthy for sensitive groups (101–150), red is unhealthy (151–200), purple is very unhealthy (201–250), and maroon is hazardous (251+).
+</details>
 
-**Why does it show cloudy when it looks sunny outside?**
-Open-Meteo's daily weather code represents the worst condition of the day. Even brief high-altitude clouds or haze can push the code to "cloudy" for the whole day. The current conditions (top of the widget) are more accurate for right now.
+<details>
+<summary>Why is the night mode not switching?</summary>
+<br>
+The day/night switch depends on live sunrise/sunset data from the API. If the skin just loaded, it may take a few seconds to fetch the data. Try right-clicking and hitting <strong>Refresh weather</strong>.
+</details>
 
-**How often does it update?**
-Every 5 minutes for weather, wind, and AQI.
-
-**Can I use Celsius?**
-Yes — right-click the widget and select **Use Celsius**. Wind speed will automatically switch to km/h. Right-click again and select **Use Fahrenheit** to switch back.
-
-**The widget shows blank/no data after loading.**
-Wait about 10–15 seconds for the API calls to complete on first load. If it stays blank, right-click and hit **Refresh weather**.
+<details>
+<summary>Can I move the widget to a second monitor?</summary>
+<br>
+Yes. In Rainmeter Manager, set the X position to a value beyond your primary screen width. For example if your primary monitor is 1920px wide, setting X to 2000 will place it on the second monitor.
+</details>
 
 ---
 ## License
