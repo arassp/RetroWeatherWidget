@@ -38,11 +38,12 @@ Retroweather works on Windows 7 and above.
 
 1. Download or clone this repository
 2. Copy the `RetroWeather2` folder to your Rainmeter Skins directory:
+   
    ```
-   Documents\Rainmeter\Skins\RetroWeather2\
+   Documents\Rainmeter\Skins\RetroWeather\
    ```
-3. Open Rainmeter Manager, find **RetroWeather2** and click **Load**
-4. The Meteocons font will be loaded automatically from `@Resources\Fonts\`
+4. Open Rainmeter Manager, find **RetroWeather** and click **Load**
+5. The Meteocons font will be loaded automatically from `@Resources\Fonts\`
 
 ---
 
