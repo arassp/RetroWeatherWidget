@@ -2,7 +2,7 @@
 
 If you used Windows Vista or 7, you probably remember the sidebar widgets. A little weather card sitting in the corner of your desktop, showing the temperature and a sun or cloud icon. Simple, clean, always there. Then Windows 8 came out and Microsoft just... removed them. I missed them. So I built this.
 
-RetroWeather is a [Rainmeter](https://www.rainmeter.net/) skin that brings that feeling back. It looks and feels like those old Vista/7 gadgets, but underneath it's pulling live weather, air quality, UV index, and wind data from a modern API.. for free, no account or API key needed. You can switch between Celsius and Fahrenheit, change your location by typing any city. Oh, and it automatically shifts into a dark night mode after sunset.
+RetroWeather is a [Rainmeter](https://www.rainmeter.net/) skin that brings back the old weather widget. It looks and feels like those old Vista/7 gadgets, but underneath it's pulling live weather, air quality, UV index, and wind data from a modern API.. for free, no account or API key needed. You can switch between Celsius and Fahrenheit, change your location by typing any city. Oh, and it automatically shifts into a dark night mode after sunset.
 
 Retroweather works on Windows 7 and above. 
 
