@@ -128,7 +128,6 @@ Windows 7 ships with PowerShell 2.0 which lacks TLS 1.2 support, required by the
 
 ---
 ## FAQ
-
 <details>
 <summary>Can I change the widget's colors or size?</summary>
 <br>
@@ -163,12 +162,12 @@ The widget currently shows 3 days. Open-Meteo supports up to 16 days of forecast
 <summary>Can I run multiple instances with different locations?</summary>
 <br>
 Yes. Copy the entire skin folder, give it a different name, load it separately in Rainmeter Manager, and set different coordinates in each copy's ini file.
-</details
-   
+</details>
+
 <details>
 <summary>Where is the weather API URL defined?</summary>
 <br>
-In the <code>[Variables]</code> section, look for <code>WeatherURL</code>.
+In the <code>[Variables]</code> section, look for <code>WeatherURL</code>. It's built dynamically using your <code>Latitude</code>, <code>Longitude</code>, and <code>TempUnit</code> variables so it updates automatically when you switch units or change location.
 </details>
 
 <details>
@@ -194,6 +193,7 @@ The icons are characters from the Meteocons font. Each weather code is substitut
 <br>
 Each icon meter has three companion measures — <code>ColorR</code>, <code>ColorG</code>, and <code>ColorB</code> — that use Substitute to map weather codes to RGB values. The meter's <code>FontColor</code> then references those three measures dynamically to build the final color.
 </details>
+
 ---
 ## License
 
