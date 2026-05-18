@@ -131,7 +131,7 @@ Windows 7 ships with PowerShell 2.0 which lacks TLS 1.2 support, required by the
 <details>
 <summary>Can I change the widget's colors or size?</summary>
 <br>
-Yes. Open <code>Retroweather.ini</code> and edit the color variables at the top — <code>Blue</code>, <code>DarkBlue</code>, <code>White</code>, etc. — using RGBA values. To resize, adjust the width and height values in <code>[MeterBackground]</code> and reposition the meters accordingly.
+Yes. Open <code>Retroweather.ini</code> and edit the color variables at the top, <code>Blue</code>, <code>DarkBlue</code>, <code>White</code>, etc... using RGBA values. To resize, adjust the width and height values in <code>[MeterBackground]</code> and reposition the meters accordingly.
 </details>
 
 <details>
