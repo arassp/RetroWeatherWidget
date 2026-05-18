@@ -27,7 +27,7 @@ Retroweather works on Windows 7 and above.
 
 ## Requirements
 
-- [Rainmeter 4.5+](https://www.rainmeter.net/)
+- [Rainmeter 4.5+](https://www.rainmeter.net/) (Download)
 - Windows 7 SP1 and above 
 - Windows 7 users only: [Windows Management Framework 5.1](https://www.microsoft.com/en-us/download/details.aspx?id=54616) required for the location switcher
 - [Meteocons font](https://www.alessioatzeni.com/meteocons/) (included in `@Resources/Fonts`)
