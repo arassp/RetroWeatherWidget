@@ -127,7 +127,33 @@ Windows 7 ships with PowerShell 2.0 which lacks TLS 1.2 support, required by the
 - Built with [Rainmeter](https://www.rainmeter.net/)
 
 ---
+## FAQ
 
+**Does this work on Windows 10 and 11?**
+Yes. It was originally built on Windows 7 but works on all modern versions of Windows. Windows 10 and 11 users will have an easier setup since PowerShell 5.1 and TLS 1.2 are already built in.
+
+**Do I need an API key?**
+No. RetroWeather uses Open-Meteo which is completely free with no account or API key required.
+
+**How do I change my location?**
+Right-click the widget and select **Change Location...**. Type any city name or US zip code and it will update automatically.
+
+**Why does the location switcher not work on Windows 7?**
+Windows 7 ships with an older version of PowerShell that can't make secure HTTPS connections. Install [WMF 5.1](https://www.microsoft.com/en-us/download/details.aspx?id=54616) to fix this — see the Windows 7 Notes section above.
+
+**Why does it show cloudy when it looks sunny outside?**
+Open-Meteo's daily weather code represents the worst condition of the day. Even brief high-altitude clouds or haze can push the code to "cloudy" for the whole day. The current conditions (top of the widget) are more accurate for right now.
+
+**How often does it update?**
+Every 5 minutes for weather, wind, and AQI.
+
+**Can I use Celsius?**
+Yes — right-click the widget and select **Use Celsius**. Wind speed will automatically switch to km/h. Right-click again and select **Use Fahrenheit** to switch back.
+
+**The widget shows blank/no data after loading.**
+Wait about 10–15 seconds for the API calls to complete on first load. If it stays blank, right-click and hit **Refresh weather**.
+
+---
 ## License
 
 MIT License — free to use, modify, and share.
