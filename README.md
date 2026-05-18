@@ -164,13 +164,7 @@ The widget currently shows 3 days. Open-Meteo supports up to 16 days of forecast
 <br>
 Yes. Copy the entire skin folder, give it a different name, load it separately in Rainmeter Manager, and set different coordinates in each copy's ini file.
 </details
-
-<details>
-<summary>Where do I change the default location in the code?</summary>
-<br>
-Open <code>Retroweather.ini</code> and find the <code>[Variables]</code> section near the top. Edit <code>Latitude</code>, <code>Longitude</code>, and <code>Location</code> to your coordinates and city name.
-</details>
-
+   
 <details>
 <summary>Where is the weather API URL defined?</summary>
 <br>
