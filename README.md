@@ -130,9 +130,21 @@ Windows 7 ships with PowerShell 2.0 which lacks TLS 1.2 support, required by the
 ## FAQ
 
 <details>
-<summary>Can I change how often the weather updates?</summary>
+<summary>Can I change the widget's colors or size?</summary>
 <br>
-Yes. Open <code>Retroweather.ini</code> and find <code>UpdateSeconds=300</code> in the Variables section. Change <code>300</code> to any number of seconds you want. 300 = 5 minutes, 600 = 10 minutes, 900 = 15 minutes.
+Yes. Open <code>Retroweather.ini</code> and edit the color variables at the top — <code>Blue</code>, <code>DarkBlue</code>, <code>White</code>, etc. — using RGBA values. To resize, adjust the width and height values in <code>[MeterBackground]</code> and reposition the meters accordingly.
+</details>
+
+<details>
+<summary>Why is wind speed showing zero?</summary>
+<br>
+The wind data is fetched from a separate API call. It may take a few extra seconds to load after the widget first appears. If it stays at zero, right-click and hit <strong>Refresh weather</strong>.
+</details>
+
+<details>
+<summary>Why does the location switcher open a command window briefly?</summary>
+<br>
+The location switcher runs a PowerShell script via the RunCommand plugin. The brief window flash is normal — it closes automatically once the script finishes and the skin refreshes with the new location.
 </details>
 
 <details>
@@ -148,22 +160,17 @@ The widget currently shows 3 days. Open-Meteo supports up to 16 days of forecast
 </details>
 
 <details>
-<summary>What does the colored bar under AQI mean?</summary>
+<summary>Can I run multiple instances with different locations?</summary>
 <br>
-The bar color indicates air quality — green is good (0–50), yellow is moderate (51–100), orange is unhealthy for sensitive groups (101–150), red is unhealthy (151–200), purple is very unhealthy (201–250), and maroon is hazardous (251+).
-</details>
+Yes. Copy the entire skin folder, give it a different name, load it separately in Rainmeter Manager, and set different coordinates in each copy's ini file.
+</details
 
 <details>
 <summary>Why is the night mode not switching?</summary>
 <br>
-The day/night switch depends on live sunrise/sunset data from the API. If the skin just loaded, it may take a few seconds to fetch the data. Try right-clicking and hitting <strong>Refresh weather</strong>.
+The day/night switch depends on live sunrise/sunset data from the API. If the skin just loaded, it may take a few seconds to fetch the data. 
 </details>
 
-<details>
-<summary>Can I move the widget to a second monitor?</summary>
-<br>
-Yes. In Rainmeter Manager, set the X position to a value beyond your primary screen width. For example if your primary monitor is 1920px wide, setting X to 2000 will place it on the second monitor.
-</details>
 
 ---
 ## License
