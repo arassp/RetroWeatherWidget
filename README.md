@@ -74,7 +74,7 @@ Right-click the widget and select **Change Location...** to type any city name o
 ---
 
 ## Right-Click Menu
-
+Right-click the widget and select "custom skin actions" for the following options: 
 | Option | Description |
 |---|---|
 | Refresh weather | Forces an immediate weather update |
