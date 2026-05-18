@@ -191,7 +191,7 @@ The icons are characters from the Meteocons font. Each weather code is substitut
 <details>
 <summary>How does the icon color change per condition?</summary>
 <br>
-Each icon meter has three companion measures — <code>ColorR</code>, <code>ColorG</code>, and <code>ColorB</code> — that use Substitute to map weather codes to RGB values. The meter's <code>FontColor</code> then references those three measures dynamically to build the final color.
+Each icon meter has three companion measures: <code>ColorR</code>, <code>ColorG</code>, and <code>ColorB</code> that use Substitute to map weather codes to RGB values. The meter's <code>FontColor</code> then references those three measures dynamically to build the final color.
 </details>
 
 ---
